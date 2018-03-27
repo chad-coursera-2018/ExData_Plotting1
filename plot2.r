@@ -14,5 +14,7 @@ data$datetime = strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
 # plot
 with(data, plot(datetime, Global_active_power, ylab = "Global Active Power (kilowatts)", xlab = "", type = "l" ))
+
+# output to file
 dev.copy(png, file = "plot2.png")
 dev.off()
